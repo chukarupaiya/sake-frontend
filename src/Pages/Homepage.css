@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.rightlogin{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    color: white;
+
+}
+
+.leftlogin{
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.connectBtn{
+    color: black;
+    background-color: white;
+    width: 290px;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.connectBtn:hover{
+  cursor: pointer;
+  background-color: aquamarine;
+  color: black;
+  
+}
+
+
+.company{
+color: white;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  top:32%;
+  left:22%;
+  transform: translate(-50%,-50%);
+  font-size: 5rem;
+
+}
+
+.company2{
+  color: white;
+  position: absolute;
+  top:40%;
+  left:50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.metamask-fox {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:20%;
+    left:20%;
+    
+  }
+  .metamask-fox:hover {
+    animation: fox-jump 1s infinite;
+  }
+  @keyframes fox-jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
