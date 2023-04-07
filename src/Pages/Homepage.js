@@ -45,8 +45,8 @@ function Homepage() {
           />
         </div>
         <div className="rightlogin">
-          <p className="company">Saké</p>
-          <p className="company2">Raise a Glass to Easy Chatting and Payments with Sake</p>
+          {walletAddr == "" && <p className="company">Saké</p>}
+          {walletAddr == "" && <p className="company2">Raise a Glass to Easy Chatting and Payments with Sake</p>}
           {walletAddr == "" ? (
             <div>
               <button
