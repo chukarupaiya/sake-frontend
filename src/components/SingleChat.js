@@ -364,7 +364,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain, Moralis, EvmChain }) => {
                       color="black"
                       _hover={{ bg: "#77fcc7" }}
                       onClick={async() => {
-                        const temp=(await fetchIndex(search));
+                        const temp=(await fetchIndex(search,selectedChat.grp_multisig_address));
                         console.log(temp)
                         setSearchResult([...searchResult,temp]);
                        

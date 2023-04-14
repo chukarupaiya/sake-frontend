@@ -1,8 +1,8 @@
 const { ethers } = require("ethers");
 
-async function fetchIndex(index) {
+async function fetchIndex(index,address) {
   const Multisigabi = require("../abi/Multisig.json");
-  const Multisigaddr = "0xb1e89A6F2eccf90b0c180f554323138F19ae0FC6";
+  const Multisigaddr = address;
 
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   await provider.send("eth_requestAccounts", []);
